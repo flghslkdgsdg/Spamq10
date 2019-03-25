@@ -1,6 +1,6 @@
 ﻿const Discord = require('discord.js');
 const client = new Discord.Client();
-console.log("Scrpit By Dream");
+console.log("Scrpit By Dream!");
 
 
 client.on("ready", () => {
@@ -13,7 +13,7 @@ channel.send(`**Alven Spam, Alven Spam, Alven Spam, Alven Spam, Alven Spam, Alve
 client.on('message', message => {
  if(message.author.id !== "558365557133541406" )return;
 
-let command = "10say"
+let command = "10"
 
 if (!message.content.startsWith(command) || message.author.bot ) return;
 const args = message.content.slice(command.length).split(/ +/g).join(" ");
